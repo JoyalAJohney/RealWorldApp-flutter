@@ -8,6 +8,9 @@ class RealWorldApp extends StatefulWidget {
 }
 
 class _RealWorldAppState extends State<RealWorldApp> {
+
+  var _isLoading = true;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,12 +22,15 @@ class _RealWorldAppState extends State<RealWorldApp> {
               icon: Icon(Icons.refresh),
               onPressed: (){
                 print("Reloading....");
+                setState(() {
+                  _isLoading = false;                
+                  });
               },
             ),
           ],
         ),
         body: Center(
-          child: CircularProgressIndicator(),
+          child: _isLoading ? CircularProgressIndicator() : Text("Finished Loading...."),
         ),
       ),
     );
