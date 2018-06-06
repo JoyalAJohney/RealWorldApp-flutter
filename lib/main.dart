@@ -13,6 +13,16 @@ class _RealWorldAppState extends State<RealWorldApp> {
 
   var _isLoading = true;
 
+  _fetchData() async {
+    print("Attempting to fetch data from internet");
+    final String url = "http://api.letsbuildthatapp.com/youtube/home_feed";
+    final response = await http.get(url);
+    
+    if (response.statusCode == 200){
+      print(response.body);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,7 +36,8 @@ class _RealWorldAppState extends State<RealWorldApp> {
                 print("Reloading....");
                 setState(() {
                   _isLoading = false;                
-                  });
+                });
+                _fetchData();
               },
             ),
           ],
