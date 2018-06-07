@@ -60,7 +60,7 @@ class RealWorldApp extends StatelessWidget {
             RaisedButton(
               onPressed: _signOut,
               child: Text("Sign Out"),
-              color: Colors.blue,
+              color: Colors.white,
             )
           ],
         ),
