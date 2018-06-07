@@ -27,6 +27,9 @@ class RealWorldApp extends StatelessWidget {
       idToken: gSA.idToken,
       accessToken: gSA.accessToken
     );
+
+    print("User Name: ${user.displayName}");
+    return user;
   }
 
   @override
@@ -42,7 +45,7 @@ class RealWorldApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             RaisedButton(
-              onPressed: null,
+              onPressed: ()=> _signIn().then((FirebaseUser user)=>print(user)).catchError((e)=>print(e)),
               child: Text("Sign In"),
               color: Colors.green,
             ),
