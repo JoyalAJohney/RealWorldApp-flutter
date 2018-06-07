@@ -32,6 +32,11 @@ class RealWorldApp extends StatelessWidget {
     return user;
   }
 
+  void _signOut(){
+    googleSignIn.signOut();
+    print("User Signed Out");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +58,7 @@ class RealWorldApp extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
             ),
             RaisedButton(
-              onPressed: null,
+              onPressed: _signOut,
               child: Text("Sign Out"),
               color: Colors.blue,
             )
