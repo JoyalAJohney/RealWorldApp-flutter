@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "384879824773",
+    "firebase_url": "https://my-first-project-bdf7a.firebaseio.com",
+    "project_id": "my-first-project-bdf7a",
+    "storage_bucket": "my-first-project-bdf7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384879824773:android:2829db78c9f41dc6",
+        "android_client_info": {
+          "package_name": "Real.WorldApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384879824773-rvj0fcsv6qid5ukom0n3l1e8166mj3k4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Real.WorldApp",
+            "certificate_hash": "c18308ae4abb50e4d7686effb730599bceddf394"
+          }
+        },
+        {
+          "client_id": "384879824773-16qmdcsi6dgeqrr4jarjs9daqrui0j20.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "384879824773-16qmdcsi6dgeqrr4jarjs9daqrui0j20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeZhHndpzBCGzX04FsTQft5lBQUb4RUO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384879824773-16qmdcsi6dgeqrr4jarjs9daqrui0j20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
