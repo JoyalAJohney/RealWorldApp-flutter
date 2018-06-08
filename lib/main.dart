@@ -8,7 +8,7 @@ void main() => runApp(MaterialApp(
   theme: ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.black,
-    accentColor: Colors.red,
+    accentColor: Colors.green,
   ),
   home: RealWorldApp(),
 ));
@@ -60,7 +60,7 @@ class RealWorldApp extends StatelessWidget {
             RaisedButton(
               onPressed: _signOut,
               child: Text("Sign Out"),
-              color: Colors.white,
+              color: Colors.blue,
             )
           ],
         ),
