@@ -29,7 +29,34 @@ class _CrudOperationState extends State<CrudOperation> {
       resizeToAvoidBottomPadding: false,
       body: Column(
         children: <Widget>[
-          Flexible(),
+          Flexible(
+            flex: 0,
+            child: Center(
+              child: Form(
+                child: Flex(
+                  direction: Axis.vertical,
+                  children: <Widget>[
+                    ListTile(
+                      leading: Icon(Icons.info),
+                      title: TextFormField(
+                        initialValue: "",
+                      ),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.info),
+                      title: TextFormField(
+                        initialValue: "",
+                      ),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.send),
+                      onPressed: (){},
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ),
           Flexible(),
         ],
       )
