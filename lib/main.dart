@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import './CRUD.dart';
+// import './authenication.dart';
+import './Layout.dart';
+
 
 void main() => runApp(MaterialApp(
   theme: ThemeData(
-    brightness: Brightness.dark,
-    primaryColor: Colors.black,
-    accentColor: Colors.green,
+    brightness: Brightness.light,
+    primaryColor: Colors.green,
+    accentColor: Colors.black,
   ),
-  home: CrudOperation(),
+  home: Layout(),
 ));
 
 
