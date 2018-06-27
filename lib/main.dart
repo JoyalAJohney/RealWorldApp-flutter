@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import './authenication.dart';
-import './Layout.dart';
+import './layout.dart';
 
 
 void main() => runApp(MaterialApp(
