@@ -15,6 +15,7 @@ class _ProductDisplayState extends State<ProductDisplay> {
       body: Center(
         child: ListView(
           children: <Widget>[
+            
             Container(
               padding: const EdgeInsets.only(top: 40.0),
               child: Center(
@@ -49,6 +50,7 @@ class _ProductDisplayState extends State<ProductDisplay> {
             ),
 
             Container(
+              margin: const EdgeInsets.only(bottom: 100.0),
               padding: const EdgeInsets.only(top: 25.0),
               child: Center(
                 child: Column(
@@ -66,14 +68,14 @@ class _ProductDisplayState extends State<ProductDisplay> {
                       child: Column(
                         children: <Widget>[
                           Text(
-                            "Buyers are required to arrange a meeting place",
+                            "Buyers are required to contact the sellers",
                             style: TextStyle(
                               color: Colors.grey[700],
                               fontSize: 15.0
                             ),
                           ),
                           Text(
-                            "for themselves to exchange Money and Textbooks",
+                            "and set up a meeting place for themseleves",
                             style: TextStyle(
                               color: Colors.grey[700],
                               fontSize: 15.0
@@ -85,10 +87,30 @@ class _ProductDisplayState extends State<ProductDisplay> {
                   ],
                 ),
               ),
-            )
+            ),
+
+            Card(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Text("heeeeeelo")
+                ],
+              ),
+            ),
           ],
         ),
       ),
+      persistentFooterButtons: <Widget>[
+        FlatButton(
+          child: Icon(Icons.chat),
+          onPressed: null,
+        ),
+        FlatButton(
+          child: Icon(Icons.favorite),
+          onPressed: null,
+        )
+      ],
     );
   }
 }
