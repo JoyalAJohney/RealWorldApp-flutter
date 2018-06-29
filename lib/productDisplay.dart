@@ -16,7 +16,7 @@ class _ProductDisplayState extends State<ProductDisplay> {
         child: ListView(
           children: <Widget>[
             Container(
-              padding: const EdgeInsets.only(top: 50.0),
+              padding: const EdgeInsets.only(top: 40.0),
               child: Center(
                 child: Column(
                  children: <Widget>[
@@ -49,7 +49,7 @@ class _ProductDisplayState extends State<ProductDisplay> {
             ),
 
             Container(
-              padding: const EdgeInsets.only(top: 20.0),
+              padding: const EdgeInsets.only(top: 25.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -62,20 +62,24 @@ class _ProductDisplayState extends State<ProductDisplay> {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.all(17.0),
-                      child: Center(
-                        child: Column(
-                          children: <Widget>[
-                            Text(
-                              "Buyers are required to arrange a meeting place for themselves to Exchange Money and Textbooks",
-                              style: TextStyle(
-                                color: Colors.grey[700],
-                                fontWeight: FontWeight.bold,
-                                fontSize: 14.0
-                              ),
-                            )
-                          ],
-                        ),
+                      padding: const EdgeInsets.only(top: 7.0),
+                      child: Column(
+                        children: <Widget>[
+                          Text(
+                            "Buyers are required to arrange a meeting place",
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                              fontSize: 15.0
+                            ),
+                          ),
+                          Text(
+                            "for themselves to exchange Money and Textbooks",
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                              fontSize: 15.0
+                            ),
+                          )
+                        ],
                       ),
                     )
                   ],
