@@ -17,7 +17,8 @@ class _ProductDisplayState extends State<ProductDisplay> {
           children: <Widget>[
             
             Container(
-              padding: const EdgeInsets.only(top: 40.0),
+              // color: Colors.green,
+              padding: const EdgeInsets.only(top: 30.0),
               child: Center(
                 child: Column(
                  children: <Widget>[
@@ -45,13 +46,14 @@ class _ProductDisplayState extends State<ProductDisplay> {
             ),
 
             Container(
+              // color: Colors.blue,
               padding: const EdgeInsets.only(top: 25.0),
               child: Image.asset("assets/Images/mechanics.jpg",height: 330.0,),
             ),
 
             Container(
-              margin: const EdgeInsets.only(bottom: 100.0),
-              padding: const EdgeInsets.only(top: 25.0),
+              // color: Colors.yellow,
+              padding: const EdgeInsets.only(top: 20.0, bottom: 10.0),
               child: Center(
                 child: Column(
                   children: <Widget>[
@@ -89,15 +91,94 @@ class _ProductDisplayState extends State<ProductDisplay> {
               ),
             ),
 
-            Card(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  Text("heeeeeelo")
-                ],
+            Container(
+              // color: Colors.teal,
+              padding: const EdgeInsets.only(top: 40.0,left: 5.0,right: 5.0),
+              child: Card(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    
+                    Container(
+                      padding: const EdgeInsets.only(top: 30.0),
+                      child: Center(
+                        child: Text(
+                          "Seller Info",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25.0
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    Container(
+                      padding: const EdgeInsets.only(top: 20.0,left: 30.0,bottom: 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Name: Joyal A Johney",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Semester: 3",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Branch: Computer Science",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Mobile No: 9388205225",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Is on Whatsapp: Yes",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.only(bottom: 7.0),
+                            child: Text(
+                              "Email: joyalajohny@gmail.com",
+                              style: TextStyle(
+                                fontSize: 20.0
+                              )
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                )
               ),
-            ),
+            )
           ],
         ),
       ),
