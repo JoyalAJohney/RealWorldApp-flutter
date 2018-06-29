@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import './authenication.dart';
 import './layout.dart';
+import './productDisplay.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -9,7 +10,7 @@ void main() => runApp(MaterialApp(
     primaryColor: Colors.green,
     accentColor: Colors.black,
   ),
-  home: Layout(),
+  home: ProductDisplay(),
 ));
 
 
